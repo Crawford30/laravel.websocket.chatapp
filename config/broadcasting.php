@@ -46,7 +46,8 @@ return [
                     CURLOPT_SSL_VERIFYHOST =>  0,
                     CURLOPT_SSL_VERIFYPEER =>  0,
                 ],
-                'encrypted' => true,
+                // 'encrypted' => true,
+                'encrypted' => false, //use for development
                 'useTLS' => env('PUSHER_SCHEME', 'http') === 'http',
             ],
             'client_options' => [
