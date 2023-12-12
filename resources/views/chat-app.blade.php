@@ -158,6 +158,7 @@
                     let inst = this;
                     this.pusher.subscribe(this.logChannel + channelName)
                         .bind("log-message", (data) => {
+                            console.log("DATA: ", data);
                             if (data.type === "api-message") {
                                 if (data.details.includes("SendMessageEvent")) {
                                     let messageData = JSON.parse(data.data);
