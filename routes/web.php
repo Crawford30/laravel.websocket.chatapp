@@ -1,9 +1,10 @@
 <?php
 
-use BeyondCode\LaravelWebSockets\Apps\AppProvider;
-use BeyondCode\LaravelWebSockets\Dashboard\DashboardLogger;
+use App\Events\SendMessage;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
+use BeyondCode\LaravelWebSockets\Apps\AppProvider;
+use BeyondCode\LaravelWebSockets\Dashboard\DashboardLogger;
 
 
 
