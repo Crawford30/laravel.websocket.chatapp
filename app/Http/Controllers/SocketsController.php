@@ -15,9 +15,7 @@ class SocketsController extends Controller
             new Pusher(
                 env("PUSHER_APP_KEY"),
                 env("PUSHER_APP_SECRET"),
-                env("PUSHER_APP_ID"),
-                []
-            )
+                env("PUSHER_APP_ID"), [])
             );
 
 //Returns a valid authentication response
