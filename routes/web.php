@@ -42,5 +42,6 @@ Route::post("/chat/send", function(Request $request) {
     if ($name == null) {
         $name = "Anonymous";
     }
+    //Calling the event, its going to be handled by the queue, hence the queue should be ruunning
     SendMessage::dispatch($name, $message, $time);
 });
